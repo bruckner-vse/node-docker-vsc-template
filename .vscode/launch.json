@@ -1,0 +1,20 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Docker-compose launch",
+      "type": "node",
+      "request": "launch",
+      "remoteRoot": "/usr/src/app",
+      "address": "localhost",
+      "port": 9229,
+      "localRoot": "${workspaceFolder}/",
+      "runtimeExecutable": "docker-compose",
+      "runtimeArgs": [ "-f", "docker-compose.yml", "-f", "docker-compose.debug.yml", "up" ]
+    }
+  ]
+}
