@@ -14,7 +14,8 @@
       "port": 9229,
       "localRoot": "${workspaceFolder}/",
       "runtimeExecutable": "docker-compose",
-      "runtimeArgs": [ "-f", "docker-compose.yml", "-f", "docker-compose.debug.yml", "up" ]
+      "runtimeArgs": [ "up" ],
+      "stopOnEntry": true
     }
   ]
 }
